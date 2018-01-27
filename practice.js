@@ -1,4 +1,4 @@
-/* 
+ /* 
   Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
@@ -122,15 +122,16 @@ function contains(array, name, callback){
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
 
+// 
 
-function uniq(uniqArr, callback){
-  let uniqArr =[]
-  for(let i = 0; i<=arr.length; i++){
+function uniq(arr, cb){
+  uniqArr = [];
+  for(let i = 0; i < arr.length; i++){
     if(uniqArr.indexOf(arr[i]) == -1){
-      uniqArr.push(arr[i])
+      uniqArr.push(arr[i]);
     }
-    callback(uniqArr[i]);
   }
+  return cb(uniqArr);
 }
 
 // Do not edit the code below.
@@ -148,11 +149,14 @@ uniq(names, function(uniqArr){
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-function each(array, callback){
-  for( let i = 0; i<array.length; i++ ){
-    array[i] == callback(name,[i])
+function each(arr, cb){
+  for(let i = 0; i < arr.length; i++){
+    cb(arr[i], i)
   }
-}
+} 
+//  ** syntax of "arr[i], i" the 2nd i is the index of the name we pass in. **
+  
+
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -169,7 +173,13 @@ each(names, function(item, indice){
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-// Code here
+function getUserById(arr, id, cb){
+  for(let i = 0; i < arr.length; i++){
+    if(users[i].id == id){
+      cb(users[i]);
+    }
+  }
+}
 
 // Do not edit the code below.
 var users = [
