@@ -2,18 +2,17 @@
 
 # Project Summary
 
-In this project, we'll provide practice JavaScript problems to help you better understand `callbacks`.
+In this project, we'll provide a variety of JavaScript problems to help improve your skills. We would like you to push yourselves as much as possible. We expect you to at least finish two problems in each section. 
+
+If you would like to push yourself further, try to complete every problem. Otherwise, feel free to move on to other content.
 
 ## Setup
 
 * `Fork` this repository.
 * `Clone` your fork.
-* Open `./practice.js` with your code editor.
 * Open `./index.html` with your browser.
 
-## Directions
-
-Complete all <b>7</b> activities inside of `./practice.js` to make the spec runner pass it's tests. In order to check the progress of the spec runner, open `./SpecRunner.html` with your browser. Remember to commit and push your code often. Good luck!
+`./index.html` will provide links to all the spec runners for your convenience. It also has all the JavaSript files you will be working in imported into it. This will allow you to use the browser debugger for all your code in one spot.
 
 ## Tips and Tricks
 
